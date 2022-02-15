@@ -1,0 +1,24 @@
+.results {
+    display: grid;
+    background-color: rgb(255, 50, 50);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    opacity: 0;
+    transition: opacity 0.4s;
+    h2 {
+        font-size: 2.5rem;
+    }
+    .form-group {
+        display: grid;
+        background-color: rgb(121, 121, 121);
+        height: 5rem;
+        width: 70%;
+        border-radius: 1rem;
+        font-size: 1.3rem;
+        justify-self: center;
+        align-content: center;
+    }
+    &.show{
+        opacity: 1;
+    }
+}
