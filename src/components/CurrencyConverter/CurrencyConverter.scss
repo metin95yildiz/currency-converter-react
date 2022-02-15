@@ -1,0 +1,24 @@
+.content {
+    form {
+        background-color: rgb(75, 75, 75, 0.8);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .form-group-select {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-group-amount {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-group-submit {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
