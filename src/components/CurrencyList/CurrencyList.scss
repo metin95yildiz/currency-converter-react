@@ -1,0 +1,32 @@
+.currency-list {
+    display: grid;
+    background-color: rgb(75, 75, 75, 0.8);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    h2 {
+        font-size: 1.8rem;
+    }
+    .currency-table {
+        width: 90vw;
+        background-color: rgba(184, 184, 184, 0.8);
+        border-radius: 1rem;
+        overflow: hidden;
+        thead {
+            font-size: 1.5rem;
+            th {
+                border-bottom: 3px solid black;
+            }
+        }
+        tbody {
+            font-size: 1.1rem;
+            th {
+                border-right: 1px solid black;
+            }
+            th, td {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+}
