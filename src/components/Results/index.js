@@ -22,7 +22,7 @@ export default function Results({ currencyInfoResults }) {
                     From: {currencyInfoResults.amount} {currencyInfoResults.firstCurrency}
                     </span>
                 <div className="result">
-                    To: {currencyInfoResults.result} - {currencyInfoResults.secondCurrency}
+                    To: {currencyInfoResults.result} {currencyInfoResults.secondCurrency}
                 </div>
             </div>
         }
