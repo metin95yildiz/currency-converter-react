@@ -19,7 +19,6 @@ function CurrencyConverter({ submitConverter, currencies, results }) {
     function submit(event){
         event.preventDefault();
         setError(false);
-        console.log(currencyInfo);
         !currencyInfo.firstCurrency ||
         !currencyInfo.secondCurrency ?
         setError(true)

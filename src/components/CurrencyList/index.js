@@ -15,7 +15,7 @@ export default function CurrencyList({ currencies }) {
                 <tbody>
                     {
                         Object.keys(currencies).map(currencyCode => { return (
-                            <tr>
+                            <tr key={currencyCode}>
                             <th scope="row">{currencyCode}</th>
                             <td>{currencies[currencyCode]}</td>
                             </tr>
