@@ -1,6 +1,8 @@
+@use "../../index.scss";
+
 .content {
     form {
-        background-color: rgb(75, 75, 75, 0.8);
+        background-color: index.$bg-color;
         margin-top: 2rem;
         margin-bottom: 2rem;
         padding-top: 2rem;
@@ -20,5 +22,16 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
+    }
+    .box  {
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        transition: background-color 0.5s;
+    }
+    .info-box {
+        background-color: index.$info-box;
+    }
+    .danger-box {
+        background-color: index.$danger-box;
     }
 }
