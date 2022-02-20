@@ -20,7 +20,7 @@ export function * convertCurrency() {
         const rates = response.data["rates"];
         const firstValue = rates[currencyInfo.firstCurrency];
         const secondValue = rates[currencyInfo.secondCurrency];
-        const result = (secondValue/ firstValue) * currencyInfo.amount;
+        const result = parseFloat((secondValue/ firstValue) * currencyInfo.amount).toFixed(2);
         yield put({
             type: COMPLETE_CURRENCY_CONVERTER,
             firstCurrency: currencyInfo.firstCurrency,

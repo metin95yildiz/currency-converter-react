@@ -19,10 +19,10 @@ export default function Results({ currencyInfoResults }) {
             :
             <div className="form-group">
                 <span className="first-currency-info">
-                    {currencyInfoResults.amount} {currencyInfoResults.firstCurrency}
+                    From: {currencyInfoResults.amount} {currencyInfoResults.firstCurrency}
                     </span>
                 <div className="result">
-                    {currencyInfoResults.result} - {currencyInfoResults.secondCurrency}
+                    To: {currencyInfoResults.result} - {currencyInfoResults.secondCurrency}
                 </div>
             </div>
         }
