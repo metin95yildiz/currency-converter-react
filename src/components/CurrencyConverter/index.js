@@ -24,6 +24,7 @@ function CurrencyConverter({ submitConverter, currencies, results }) {
         setError(true)
         : submitConverter(currencyInfo)
     }
+    const currencyCodes = Object.keys(currencies);
     return (
         <div className="content">
             <form id="currency-form" onSubmit={submit}>
@@ -33,7 +34,7 @@ function CurrencyConverter({ submitConverter, currencies, results }) {
                         firstCurrency: event.target.value
                     })}>
                         <option disabled hidden>Choose</option>
-                        {Object.keys(currencies).map(currency => {
+                        {currencyCodes.map(currency => {
                             return <option key={currency}>
                                 {currency}
                             </option>
@@ -44,7 +45,7 @@ function CurrencyConverter({ submitConverter, currencies, results }) {
                         secondCurrency: event.target.value
                     })}>
                         <option disabled hidden>Choose</option>
-                        {Object.keys(currencies).map(currency => {
+                        {currencyCodes.map(currency => {
                             return <option key={currency}>
                                 {currency}
                             </option>
