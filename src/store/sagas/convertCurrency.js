@@ -8,7 +8,7 @@ import {
 import axios from "axios";
 
 export function * convertCurrency() {
-    const api_key = "7282f1d568868c68c3c4eb1740146d89"; // User API Key
+    const api_key = "8c252c153d8c16f369a281c04926cf5f"; // User API Key
     const url = "http://data.fixer.io/api/latest?access_key=" + api_key; //Fixer.io
 
     const { currencyInfo } = yield take(SUBMIT_CURRENCY_CONVERTER);
